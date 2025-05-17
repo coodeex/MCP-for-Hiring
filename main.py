@@ -2,6 +2,7 @@
 from mcp.server.fastmcp import FastMCP
 from typing import Dict, List
 from profiles import find_best_candidate, Profile
+from tools.send_email import process_send_email
 
 # Create an MCP server for hiring
 mcp = FastMCP("Hiring-MCP")
@@ -91,6 +92,7 @@ def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], ca
     )
 
 
+
 @mcp.tool()
 def send_email(subject: str, body: str, recipient: str) -> dict:
     """
@@ -104,5 +106,4 @@ def send_email(subject: str, body: str, recipient: str) -> dict:
     Returns:
         Dictionary containing the status of the email sending operation
     """
-    from tools.send_email import process_send_email
     return process_send_email(subject, body, recipient)

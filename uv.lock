@@ -137,20 +137,19 @@ wheels = [
 
 [[package]]
 name = "arcadepy"
-version = "1.4.0"
+version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
-    { name = "certifi" },
     { name = "distro" },
     { name = "httpx" },
     { name = "pydantic" },
     { name = "sniffio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4b/90/10838fa0f248fad7811602f950f8e4e1f64c2e10ef0490e641da0620b86f/arcadepy-1.4.0.tar.gz", hash = "sha256:0e1ad7458df5ef904a4ec518249e397dade8cd755cf0f5a0ecffe6706f44910b", size = 107377, upload-time = "2025-05-01T20:15:05.599Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c2/72/a05ea35127384aa3e56f5596a9f855ec1f1a9c0cd85362f786c1112442b4/arcadepy-1.3.0.tar.gz", hash = "sha256:c02c2c45396d68e96d82f3a84bb8cb9e5c00c9b0d984ba1bc24865bdcbee5f9c", size = 104373, upload-time = "2025-03-10T23:47:59.322Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/77/cc/fb6c2fd07b2b83afa58c683c4580dd505a6d5484df48944d1647778abbf6/arcadepy-1.4.0-py3-none-any.whl", hash = "sha256:dfb4822f0eed1d939331fd344a1c7da478a978674e255b4c5f73322cdbd602c1", size = 99242, upload-time = "2025-05-01T20:15:03.908Z" },
+    { url = "https://files.pythonhosted.org/packages/10/b4/80a2de657de11e055a21827a6075a4439a31decd586921ac6400ca5ef253/arcadepy-1.3.0-py3-none-any.whl", hash = "sha256:af8e19b013490685447c1fb91032f3e9028012c4ceef535930900010d4412129", size = 97556, upload-time = "2025-03-10T23:47:57.811Z" },
 ]
 
 [[package]]
@@ -847,7 +846,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "arcadepy", specifier = ">=1.4.0" },
+    { name = "arcadepy", specifier = "==1.3.0" },
     { name = "arize", specifier = ">=7.41.1" },
     { name = "arize-otel", specifier = ">=0.8.1" },
     { name = "fastapi", specifier = ">=0.115.12" },
