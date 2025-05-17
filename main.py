@@ -120,3 +120,20 @@ Best regards,
         "subject": subject,
         "message": message
     }
+
+
+@mcp.tool()
+def send_email(subject: str, body: str, recipient: str) -> dict:
+    """
+    Send an email using Google's email service through Arcade.
+    
+    Args:
+        subject: Email subject line
+        body: Email body content
+        recipient: Email address of the recipient
+        
+    Returns:
+        Dictionary containing the status of the email sending operation
+    """
+    from tools.send_email import process_send_email
+    return process_send_email(subject, body, recipient)
