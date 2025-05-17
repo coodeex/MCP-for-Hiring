@@ -1,7 +1,18 @@
 [project]
-name = "mcp-server-demo"
+name = "mcp-server-demo-2"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "arcadepy>=1.4.0",
+    "arize>=7.41.1",
+    "arize-otel>=0.8.1",
+    "fastapi>=0.115.12",
+    "litellm>=1.70.0",
+    "mcp-server>=0.1.4",
+    "mcp[cli]>=1.9.0",
+    "openinference-instrumentation-litellm>=0.1.19",
+    "python-dotenv>=1.1.0",
+    "uvicorn>=0.34.2",
+]
