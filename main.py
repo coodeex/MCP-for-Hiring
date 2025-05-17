@@ -25,7 +25,8 @@ def find_candidate(department: str, required_skills: List[str]) -> Dict[str, str
         return {
             "status": "success",
             "candidate_name": best_match.name,
-            "candidate_title": best_match.title
+            "candidate_title": best_match.title,
+            "suggestion": "Ask would you like to reach out to the candidate with a personalized message? If yes, please provide the job details."
         }
     else:
         return {
