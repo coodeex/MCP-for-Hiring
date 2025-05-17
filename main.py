@@ -69,57 +69,25 @@ def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], ca
             - description: Job description
             - requirements: Key requirements
             - benefits: Job benefits
+            - salary: Salary information
         organization: Dictionary containing organization details like:
             - name: Company name
             - description: Company description
-            - culture: Company culture highlights
-            - values: Company values
         candidate_profile: Dictionary containing candidate information like:
             - name: Candidate's name
-            - experience: Relevant experience
-            - skills: Key skills
-            - current_role: Current position
             
     Returns:
         Dictionary containing the tailored message and subject line
     """
-    # Extract key information
-    candidate_name = candidate_profile.get("name", "").split()[0]  # First name
-    job_title = job_details.get("title", "the role")
-    company_name = organization.get("name", "our company")
+    from tools.tailor_message import process_tailor_message
     
-    # Create personalized message
-    message = f"""Hi {candidate_name},
-
-I hope this message finds you well. I came across your profile and was particularly impressed by your experience in {candidate_profile.get('current_role', 'your current role')} and your expertise in {', '.join(candidate_profile.get('skills', [])[:3])}.
-
-We're looking for a {job_title} at {company_name}, and your background caught my attention. {organization.get('description', '')}
-
-What particularly stood out to me was:
-- Your experience in {candidate_profile.get('experience', 'relevant areas')}
-- Your strong background in {', '.join(candidate_profile.get('skills', [])[:2])}
-- The alignment between your work and our {organization.get('values', 'values')}
-
-{job_details.get('description', '')}
-
-Some highlights about working with us:
-{job_details.get('benefits', 'We offer competitive benefits and a great work environment.')}
-
-Would you be interested in having a conversation about this opportunity? I'd love to share more details about the role and learn more about your career aspirations.
-
-Looking forward to your response!
-
-Best regards,
-[Your name]
-{organization.get('name', '')}"""
-
-    subject = f"Exciting {job_title} Opportunity at {company_name}"
-    
-    return {
-        "status": "success",
-        "subject": subject,
-        "message": message
-    }
+    return process_tailor_message(
+        company_name=organization.get("name", ""),
+        job_title=job_details.get("title", ""),
+        salary=job_details.get("salary", "Competitive"),
+        candidate_name=candidate_profile.get("name", ""),
+        description=job_details.get("description", "")
+    )
 
 
 @mcp.tool()
