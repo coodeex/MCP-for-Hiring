@@ -1,37 +1,10 @@
-import os
-from dotenv import load_dotenv
-from arcadepy import Arcade 
+import httpx
 
-load_dotenv()
-
-# Global variables for authorization
-API_KEY = os.getenv("ARCADE_API_KEY")
-USER_ID = os.getenv("ARCADE_USER_ID")
-client = Arcade()
-
-def initialize_email_auth():
-    """Initialize and verify email authorization"""
-    # Authorize the tool
-    auth_response = client.tools.authorize(
-        tool_name="Google.SendEmail@1.2.1",
-        user_id=USER_ID,
-    )
-
-    # Check if authorization is completed
-    if auth_response.status != "completed":
-        print(f"Click this link to authorize: {auth_response.url}")
-
-    # Wait for the authorization to complete
-    auth_response = client.auth.wait_for_completion(auth_response)
-
-    if auth_response.status != "completed":
-        raise Exception("Authorization failed")
-
-    print("🚀 Authorization successful!")
+EMAIL_SERVICE_URL = "http://localhost:7253/send-email"
 
 def process_send_email(subject: str, body: str, recipient: str) -> dict:
     """
-    Process and send an email using Google's email service through Arcade.
+    Send an email by calling the email service.
     
     Args:
         subject: Email subject line
@@ -41,29 +14,18 @@ def process_send_email(subject: str, body: str, recipient: str) -> dict:
     Returns:
         Dictionary containing the status of the email sending operation
     """
-    a = 1
-    if a == 1:
-        return {"status": "success", "message": "Email sent successfully"}
     try:
-        # Ensure authorization is complete
-        initialize_email_auth()
-        
-        # Send the email
-        result = client.tools.execute(
-            tool_name="Google.SendEmail@1.2.1",
-            input={
-                "subject": subject,
-                "body": body,
-                "recipient": recipient
-            },
-            user_id=USER_ID,
-        )
-        
-        return {
-            "status": "success",
-            "message": "Email sent successfully",
-            "result": result
-        }
+        with httpx.Client() as client:
+            response = client.post(
+                EMAIL_SERVICE_URL,
+                json={
+                    "subject": subject,
+                    "body": body,
+                    "recipient": recipient
+                }
+            )
+            response.raise_for_status()
+            return response.json()
     except Exception as e:
         return {
             "status": "error",

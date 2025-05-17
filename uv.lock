@@ -840,6 +840,7 @@ dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "mcp-server" },
     { name = "openinference-instrumentation-litellm" },
+    { name = "pyjokes" },
     { name = "python-dotenv" },
     { name = "uvicorn" },
 ]
@@ -854,6 +855,7 @@ requires-dist = [
     { name = "mcp", extras = ["cli"], specifier = ">=1.9.0" },
     { name = "mcp-server", specifier = ">=0.1.4" },
     { name = "openinference-instrumentation-litellm", specifier = ">=0.1.19" },
+    { name = "pyjokes", specifier = ">=0.8.3" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "uvicorn", specifier = ">=0.34.2" },
 ]
@@ -1550,6 +1552,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a39937982cc6111d17f84/pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f", size = 4968581, upload-time = "2025-01-06T17:26:30.443Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8a/0b/9fcc47d19c48b59121088dd6da2488a49d5f72dacf8262e2790a1d2c7d15/pygments-2.19.1-py3-none-any.whl", hash = "sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c", size = 1225293, upload-time = "2025-01-06T17:26:25.553Z" },
+]
+
+[[package]]
+name = "pyjokes"
+version = "0.8.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/cc/2d25e5397d7a6d362971f23b42c8b624c5298c0864a1000cd587f39e6748/pyjokes-0.8.3.tar.gz", hash = "sha256:5735d31e973d5b6934b46b89431505733c3110f9b66eac0ff0be86f7f3646423", size = 44617, upload-time = "2024-08-10T12:39:31.98Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1d/dd/2495fe4d1ff804ec3094ad4c76cd0fcfb8902d630ce690118560a40df171/pyjokes-0.8.3-py3-none-any.whl", hash = "sha256:12836e61bc7a2c1ff302604a040f0f63ac36c5c947c20319fcb5d1ab37bac46e", size = 47563, upload-time = "2024-08-10T12:39:30.73Z" },
 ]
 
 [[package]]
