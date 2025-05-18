@@ -114,6 +114,9 @@ GAPS: [Areas for consideration]"""
 
         # Extract the selected candidate ID from the analysis
         selected_id_match = re.search(r'SELECTED:\s*(\d+)', analysis)
+        if not selected_id_match:
+            # Try to find any number after "SELECTED:" if the first pattern doesn't match
+            selected_id_match = re.search(r'SELECTED:.*?(\d+)', analysis)
         selected_id = selected_id_match.group(1) if selected_id_match else PROFILES[0]['id']  # Default to first candidate if no match found
 
         return {
