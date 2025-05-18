@@ -70,37 +70,31 @@ async def find_best_candidate(request: SearchRequest) -> Dict:
             for i, profile in enumerate(PROFILES[:2])
         ])
         
-        prompt = f"""Given the following job search criteria and two candidate profiles, critically evaluate if either candidate is truly qualified for the role. Be strict and honest in your assessment.
-        
+        prompt = f"""Compare these candidate profiles against the job search criteria and determine the best match:
+
 Search Criteria:
 {request.search_query}
 
 {candidates_text}
 
-Please analyze both candidates against the search criteria and:
-1. First determine if ANY candidate meets the minimum qualifications. If none do, clearly state this.
-2. Only if at least one candidate is qualified, determine which candidate is a better match (reference them by their ID)
-3. Provide a detailed explanation of your decision
-4. List specific matching points and any concerning gaps
+Analyze the candidates and provide:
+1. The best matching candidate ID
+2. Brief explanation of why they are the best fit
+3. Key matching qualifications
+4. Any potential gaps to be aware of
 
 Format your response as:
-QUALIFIED: [YES/NO]
-[If NO]:
-REASON: [Explanation why no candidates meet requirements]
-GAPS: [Key missing qualifications]
-
-[If YES]:
 SELECTED: [ID number]
-CANDIDATE LINK: http://localhost:5000/candidate/[ID number]
-REASON: [Your explanation]
-MATCHING POINTS: [Bullet points of matching criteria]
-CONCERNS: [Any potential gaps or concerns]"""
+CANDIDATE LINK: http://localhost:3000/candidate/[ID number]
+REASON: [Brief explanation]
+MATCHING POINTS: [Key qualifications]
+GAPS: [Areas for consideration]"""
 
         response = litellm.completion(
             model="gpt-3.5-turbo",
             messages=[{
                 "role": "system",
-                "content": "You are a highly critical expert recruiter AI that maintains strict standards when evaluating candidates. You prioritize finding truly qualified matches over making compromises."
+                "content": "You are an expert recruiter AI that identifies the best matching candidate based on the given criteria."
             },
             {
                 "role": "user",
@@ -111,22 +105,14 @@ CONCERNS: [Any potential gaps or concerns]"""
         # Extract the AI's analysis
         analysis = response.choices[0].message.content
 
-        # Check if any candidates are qualified
-        if "QUALIFIED: NO" in analysis:
-            return {
-                "status": "no_qualified_candidates",
-                "analysis": analysis
-            }
-
         # Extract the selected candidate ID from the analysis
-        # Look for "SELECTED: " followed by a number
         selected_id_match = re.search(r'SELECTED:\s*(\d+)', analysis)
-        selected_id = selected_id_match.group(1) if selected_id_match else None
+        selected_id = selected_id_match.group(1) if selected_id_match else PROFILES[0]['id']  # Default to first candidate if no match found
 
         return {
             "status": "success",
             "analysis": analysis,
-            "candidate_link": f"http://localhost:5000/candidate/{selected_id}" if selected_id else None
+            "candidate_link": f"http://localhost:3000/candidate/{selected_id}"
         }
 
     except Exception as e:

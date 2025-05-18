@@ -1,3 +1,4 @@
+import webbrowser
 import httpx
 
 CANDIDATE_SERVICE_URL = "http://localhost:7624/find-candidate"
@@ -21,7 +22,13 @@ def find_best_candidate(search_query: str) -> dict:
                 }
             )
             response.raise_for_status()
-            return response.json()
+            result = response.json()
+            
+            # If we have a candidate link, open it in the browser
+            if "candidate_link" in result:
+                webbrowser.open(result["candidate_link"])
+                
+            return result
     except Exception as e:
         return {
             "status": "error",
@@ -38,4 +45,10 @@ if __name__ == "__main__":
     
     # Call the function and print results
     result = find_best_candidate(search_query)
-    print(result) 
+    print("\nSearch Result:")
+    print(result)
+    
+    # Print candidate details if available
+    if "candidate_details" in result:
+        print("\nCandidate Details:")
+        print(result["candidate_details"]) 

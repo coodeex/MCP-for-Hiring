@@ -3,7 +3,6 @@ from mcp.server.fastmcp import FastMCP
 from typing import Dict, List
 from tools.find_candidate import find_best_candidate
 from tools.send_email import process_send_email
-
 # Create an MCP server for hiring
 mcp = FastMCP("Hiring-MCP")
 
@@ -17,7 +16,7 @@ def find_candidate(search_query: str) -> Dict[str, str]:
         search_query: The search criteria provided by the hiring manager (e.g., "Looking for a senior software engineer with 5+ years of Python experience")
         
     Returns:
-        Dictionary containing the response from the candidate matching system
+        The analysis of the best candidate and the link to the candidate's profile. Always provide the link. It will be formatted as http://localhost:3000/candidate/[ID number]
     """
     result = find_best_candidate(search_query)
     return result
@@ -47,36 +46,36 @@ def get_candidate_details(name: str) -> Dict[str, any]:
     }
 
 
-@mcp.tool()
-def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], candidate_profile: Dict[str, any]) -> Dict[str, str]:
-    """
-    Create a personalized outreach message for a candidate based on job details, organization info, and candidate profile.
+# @mcp.tool()
+# def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], candidate_profile: Dict[str, any]) -> Dict[str, str]:
+#     """
+#     Create a personalized outreach message for a candidate based on job details, organization info, and candidate profile.
     
-    Args:
-        job_details: Dictionary containing job information like:
-            - title: Job title
-            - description: Job description
-            - requirements: Key requirements
-            - benefits: Job benefits
-            - salary: Salary information
-        organization: Dictionary containing organization details like:
-            - name: Company name
-            - description: Company description
-        candidate_profile: Dictionary containing candidate information like:
-            - name: Candidate's name
+#     Args:
+#         job_details: Dictionary containing job information like:
+#             - title: Job title
+#             - description: Job description
+#             - requirements: Key requirements
+#             - benefits: Job benefits
+#             - salary: Salary information
+#         organization: Dictionary containing organization details like:
+#             - name: Company name
+#             - description: Company description
+#         candidate_profile: Dictionary containing candidate information like:
+#             - name: Candidate's name
             
-    Returns:
-        Dictionary containing the tailored message and subject line
-    """
-    from tools.tailor_message import process_tailor_message
+#     Returns:
+#         Dictionary containing the tailored message and subject line
+#     """
+#     from tools.tailor_message import process_tailor_message
     
-    return process_tailor_message(
-        company_name=organization.get("name", ""),
-        job_title=job_details.get("title", ""),
-        salary=job_details.get("salary", "Competitive"),
-        candidate_name=candidate_profile.get("name", ""),
-        description=job_details.get("description", "")
-    )
+#     return process_tailor_message(
+#         company_name=organization.get("name", ""),
+#         job_title=job_details.get("title", ""),
+#         salary=job_details.get("salary", "Competitive"),
+#         candidate_name=candidate_profile.get("name", ""),
+#         description=job_details.get("description", "")
+#     )
 
 
 
