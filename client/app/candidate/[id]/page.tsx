@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { CandidateData } from "../types";
 
 async function getCandidateData(id: string) {
   const filePath = path.join(process.cwd(), "db", `p${id}.json`);
@@ -15,7 +16,7 @@ async function getCandidateData(id: string) {
 }
 
 export default async function CandidatePage({ params }: { params: { id: string } }) {
-  const candidateData = (await getCandidateData(params.id)).data.person;
+  const candidateData: CandidateData = (await getCandidateData(params.id)).data.person;
 
   if (!candidateData) {
     notFound();
@@ -33,7 +34,7 @@ export default async function CandidatePage({ params }: { params: { id: string }
       
       <div className="mt-6">
         <h1 className="text-2xl font-bold mb-4">
-          Candidate Profile: {candidateData.name}
+          Candidate Profile: {candidateData.firstName} {candidateData.lastName}
         </h1>
         <div className="bg-white shadow rounded-lg p-6">
           <p className="text-gray-600">ID: {params.id}</p>
@@ -41,10 +42,10 @@ export default async function CandidatePage({ params }: { params: { id: string }
         </div>
       </div>
 
-      <pre style={{ whiteSpace: 'pre-wrap', color: '#55b1af' }}>
+      {/* <pre style={{ whiteSpace: 'pre-wrap', color: '#55b1af' }}>
       {'candidateData: '}
       {JSON.stringify(candidateData, null, 2)}
-      </pre>
+      </pre> */}
     </div>
   );
 } 
