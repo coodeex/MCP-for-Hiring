@@ -1,7 +1,7 @@
 # server.py
 from mcp.server.fastmcp import FastMCP
 from typing import Dict, List
-from profiles import find_best_candidate
+from tools.find_candidate import find_best_candidate
 from tools.send_email import process_send_email
 
 # Create an MCP server for hiring
@@ -19,8 +19,8 @@ def find_candidate(search_query: str) -> Dict[str, str]:
     Returns:
         Dictionary containing the response from the candidate matching system
     """
-    response = find_best_candidate(search_query)
-    return {"response": response}
+    result = find_best_candidate(search_query)
+    return result
 
 
 @mcp.resource("departments://list")
