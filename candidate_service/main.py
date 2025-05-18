@@ -8,6 +8,7 @@ from arize.otel import register
 from openinference.instrumentation.litellm import LiteLLMInstrumentor
 from dotenv import load_dotenv
 import glob
+import re
 
 load_dotenv()
 
@@ -90,6 +91,7 @@ GAPS: [Key missing qualifications]
 
 [If YES]:
 SELECTED: [ID number]
+CANDIDATE LINK: http://localhost:5000/candidate/[ID number]
 REASON: [Your explanation]
 MATCHING POINTS: [Bullet points of matching criteria]
 CONCERNS: [Any potential gaps or concerns]"""
@@ -116,9 +118,15 @@ CONCERNS: [Any potential gaps or concerns]"""
                 "analysis": analysis
             }
 
+        # Extract the selected candidate ID from the analysis
+        # Look for "SELECTED: " followed by a number
+        selected_id_match = re.search(r'SELECTED:\s*(\d+)', analysis)
+        selected_id = selected_id_match.group(1) if selected_id_match else None
+
         return {
             "status": "success",
-            "analysis": analysis
+            "analysis": analysis,
+            "candidate_link": f"http://localhost:5000/candidate/{selected_id}" if selected_id else None
         }
 
     except Exception as e:
