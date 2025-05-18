@@ -22,29 +22,6 @@ def find_candidate(search_query: str) -> Dict[str, str]:
     return result
 
 
-@mcp.resource("departments://list")
-def list_departments() -> List[str]:
-    """Get a list of available departments with candidates"""
-    return ["Engineering", "Marketing"]
-
-
-@mcp.resource("candidate://{name}")
-def get_candidate_details(name: str) -> Dict[str, any]:
-    """Get detailed information about a specific candidate"""
-    from profiles import PROFILES
-    
-    candidate = next((p for p in PROFILES if p.name.lower() == name.lower()), None)
-    if not candidate:
-        return {"error": f"Candidate {name} not found"}
-        
-    return {
-        "name": candidate.name,
-        "title": candidate.title,
-        "department": candidate.department,
-        "experience_years": candidate.experience_years,
-        "skills": candidate.skills
-    }
-
 
 # @mcp.tool()
 # def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], candidate_profile: Dict[str, any]) -> Dict[str, str]:
