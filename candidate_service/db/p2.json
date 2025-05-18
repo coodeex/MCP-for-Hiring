@@ -1,10 +1,10 @@
 {
-    "id": "2",
     "data": {
     "success": true,
     "credits_left": 24448,
     "rate_limit_left": 999,
     "person": {
+      "id": "2",
       "publicIdentifier": "sarah-anderson-marketing",
       "linkedInIdentifier": "ACoAACbR45gBzfRxEWOaubh8pjziRG1r3dSI_bN",
       "memberIdentifier": "681234567",
