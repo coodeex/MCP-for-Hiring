@@ -9,7 +9,14 @@ title: Candidate Matcher
 prompt: "Using the internal database of candidate profiles and requirements, analyze the candidate's profile and evaluate their suitability for the position based on the following criteria:
 {criteria}
 
-Please:
+If no relevant candidates are found in the database, please clearly state that there are no matching candidates.
+
+For each matching candidate, please provide:
+- Basic Information:
+  * Full Name
+  * LinkedIn URL
+  * Current Location
+  * Brief summary of work experience and key skills
 - Compare the candidate against our historical successful hires
 - Match percentage for each criterion based on our database patterns
 - Detailed analysis of the candidate's strengths and potential gaps
