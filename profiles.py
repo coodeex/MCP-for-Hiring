@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import List
+import httpx
 
 @dataclass
 class Profile:
@@ -9,42 +10,31 @@ class Profile:
     experience_years: int
     department: str
 
-# Sample profiles database
-PROFILES = [
-    Profile(
-        name="John",
-        title="Software Developer",
-        skills=["Python", "JavaScript", "React", "Docker", "Git"],
-        experience_years=5,
-        department="Engineering"
-    ),
-    Profile(
-        name="Anna",
-        title="Marketing Specialist",
-        skills=["Content Marketing", "Social Media", "SEO", "Analytics", "Campaign Management"],
-        experience_years=3,
-        department="Marketing"
-    )
-]
+TOOLHOUSE_URL = "https://agents.toolhouse.ai/500de86f-63aa-4a56-800a-1eef2e4257c1"
+TOOLHOUSE_AUTH = "Bearer th-db1eXm0Nl2qf9_oAPTKJAWRFA8HrhOUAHhF-FK-11-A"
 
-def find_best_candidate(department: str, required_skills: List[str]) -> Profile | None:
+def find_best_candidate(department: str, required_skills: List[str]) -> str:
     """
-    Find the best candidate based on department and required skills
-    Returns None if no suitable candidate is found
+    Find the best candidate by querying the Toolhouse API
+    Returns the formatted response text from Toolhouse
     """
-    best_match = None
-    best_match_score = 0
+    headers = {
+        "Authorization": TOOLHOUSE_AUTH
+    }
     
-    for profile in PROFILES:
-        if profile.department.lower() != department.lower():
-            continue
-            
-        # Calculate match score based on required skills
-        skill_match_score = sum(1 for skill in required_skills 
-                              if any(s.lower() == skill.lower() for s in profile.skills))
-        
-        if skill_match_score > best_match_score:
-            best_match_score = skill_match_score
-            best_match = profile
+    # Prepare the criteria based on department and skills
+    criteria = f"Department: {department}\nRequired Skills: {', '.join(required_skills)}"
     
-    return best_match 
+    try:
+        with httpx.Client(timeout=30.0) as client:
+            response = client.post(
+                TOOLHOUSE_URL,
+                headers=headers,
+                json={"criteria": criteria}
+            )
+            response.raise_for_status()
+            return response.text
+    except httpx.HTTPError as e:
+        return f"Error contacting Toolhouse API: {str(e)}"
+    except Exception as e:
+        return f"Unexpected error: {str(e)}" 
