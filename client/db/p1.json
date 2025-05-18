@@ -12,10 +12,10 @@
       "email": "hackathon549@gmail.com",
       "firstName": "Freddie",
       "lastName": "Walker",
-      "headline": "CTO at Nokia | Agents",
+      "headline": "Developer at RAGVibe | Agents",
       "location": "San Francisco, California, United States of America",
       "summary": "Building software for people. Optimistic realist.\n\nI see a major shift happening in tech toward agentic systems. There's huge potential in combining large datasets, algorithmic reasoning, and LLM layers connected to tools that can complete tasks autonomously.\n \nHappy to discuss building agentic systems!",
-      "profile_summary": "Freddie Walker is a CTO and tech leader with expertise in AI agents and full-stack development. Has progressive experience from Full Stack Developer at Taito United to CTO at Clarvo, focusing on AI-driven solutions. Core skills include AI Agents, Full-Stack Development (Next.js, React.js, TypeScript, Node.js), and Cloud Computing. Personality profile shows strong analytical thinking (92% Thinking trait) with preference for innovation (85% Intuition), working independently (78% Introversion), and maintaining flexibility in approach (67% Perceiving). Currently leading Clarvo's technical vision in building AI agents for recruitment.",
+      "profile_summary": "Freddie Walker is a Developer and tech leader with expertise in AI agents and full-stack development. Has progressive experience from Full Stack Developer at Taito United to Developer at RAGVibe, focusing on AI-driven solutions. Core skills include AI Agents, Full-Stack Development (Next.js, React.js, TypeScript, Node.js), and Cloud Computing. Personality profile shows strong analytical thinking (92% Thinking trait) with preference for innovation (85% Intuition), working independently (78% Introversion), and maintaining flexibility in approach (67% Perceiving). Currently leading RAGVibe's technical vision in building AI agents for recruitment.",
       "personality": {
         "mind": {
           "type": "I",
@@ -52,8 +52,8 @@
         "positionsCount": 4,
         "positionHistory": [
           {
-            "title": "CTO and Co-Founder",
-            "companyName": "Clarvo",
+            "title": "Developer and Co-Founder",
+            "companyName": "RAGVibe",
             "companyLocation": "Espoo, Uusimaa, Finland",
             "description": "We're building AI agents that help people and companies find each other on their own terms.\n\nSearching for my first IT job, I spent a lot of time creating my CV and applying to many interesting job opportunities. However, waiting and reading rejection letters were rough. My relatively difficult experience got me interested in making the process easier and less stressful for people.",
             "startEndDate": {
@@ -305,8 +305,8 @@
     },
     "company": {
       "linkedInId": "86305318",
-      "name": "Clarvo",
-      "universalName": "clarvo",
+      "name": "RAGVibe",
+      "universalName": "rAGVibe",
       "linkedInUrl": "https://www.linkedin.com/company/86305318",
       "employeeCount": 5,
       "followerCount": 1337,
@@ -314,7 +314,7 @@
         "start": 2,
         "end": 10
       },
-      "websiteUrl": "https://www.clarvo.ai",
+      "websiteUrl": "https://www.rAGVibe.ai",
       "tagline": "Your Personal Career Agent. So Opportunities Can Find You.",
       "description": "Train your own AI career agent to represent you on the job market. Never miss the right career opportunity again.\n\nYou hate spam and we hate it too, which is why we prioritize quality over quantity, in getting you your next job.\n",
       "industry": "Technology, Information and Internet",
@@ -339,21 +339,21 @@
       },
       "fundingData": {
         "numberOfFundingRounds": 1,
-        "crunchbaseOrganizationUrl": "https://www.crunchbase.com/organization/clarvo?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=profile_cta",
+        "crunchbaseOrganizationUrl": "https://www.crunchbase.com/organization/rAGVibe?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=profile_cta",
         "lastFundingRound": {
           "fundingType": "Pre-seed",
           "moneyRaised": {
             "amount": "164010",
             "currencyCode": "USD"
           },
-          "fundingRoundUrl": "https://www.crunchbase.com/funding_round/clarvo-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=last_funding",
+          "fundingRoundUrl": "https://www.crunchbase.com/funding_round/rAGVibe-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=last_funding",
           "announcedOn": "2024-11-05T00:00:00.000Z",
           "numberOfOtherInvestors": 1,
-          "investorsUrl": "https://www.crunchbase.com/funding_round/clarvo-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=all_investors",
+          "investorsUrl": "https://www.crunchbase.com/funding_round/rAGVibe-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=all_investors",
           "leadInvestors": []
         }
       },
-      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4D1BAQGJpbt1LRFLJw/company-background_400/B4DZZUz3DFHIAY-/0/1745179604169/clarvo_cover?e=1748131200&v=beta&t=naZAYZV8Vy95m6ZDd5LL_SNWAoZxpekx3Vx6S6C42As"
+      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4D1BAQGJpbt1LRFLJw/company-background_400/B4DZZUz3DFHIAY-/0/1745179604169/rAGVibe_cover?e=1748131200&v=beta&t=naZAYZV8Vy95m6ZDd5LL_SNWAoZxpekx3Vx6S6C42As"
     }
   }
 }

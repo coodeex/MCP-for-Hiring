@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Dict
 from arize.otel import register
-from openinference.instrumentation.litellm import LiteLLMInstrumentor
-import litellm
+from openinference.instrumentation.groq import GroqInstrumentor
+from groq import Groq
 import os
 from dotenv import load_dotenv
 import uvicorn
@@ -17,8 +17,11 @@ tracer_provider = register(
     project_name="mcp-for-hiring"
 )
 
-# Instrument LiteLLM
-LiteLLMInstrumentor().instrument(tracer_provider=tracer_provider)
+# Instrument Groq
+GroqInstrumentor().instrument(tracer_provider=tracer_provider)
+
+# Initialize Groq client
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 app = FastAPI(title="Tailor Message Service")
 
@@ -38,7 +41,7 @@ class TailorMessageResponse(BaseModel):
 @app.post("/tailor-message", response_model=TailorMessageResponse)
 async def tailor_message(request: TailorMessageRequest) -> Dict:
     """
-    Process a request to create a personalized outreach message using LiteLLM.
+    Process a request to create a personalized outreach message using Groq.
     """
     try:
         prompt = f"""Create a professional and engaging outreach message to a potential job candidate with the following details:
@@ -56,11 +59,11 @@ The message should:
 4. Include the salary information tastefully
 5. Reference the job description key points
 6. End with a clear call to action
+7. End with "Best regards, \nThe MCP for Hiring Team", don't include name or company name
 
 Please format this as a complete email with subject line and body."""
 
-        response = litellm.completion(
-            model="gpt-3.5-turbo",
+        response = client.chat.completions.create(
             messages=[{
                 "role": "system",
                 "content": "You are a professional recruiter crafting personalized outreach messages to potential candidates."
@@ -68,7 +71,8 @@ Please format this as a complete email with subject line and body."""
             {
                 "role": "user",
                 "content": prompt
-            }]
+            }],
+            model="llama3-70b-8192"
         )
 
         # Extract the generated message
@@ -82,7 +86,7 @@ Please format this as a complete email with subject line and body."""
         return TailorMessageResponse(
             status="success",
             subject=subject,
-            message=body
+            message=body,
         )
 
     except Exception as e:
