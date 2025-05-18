@@ -69,7 +69,7 @@ async def find_best_candidate(request: SearchRequest) -> Dict:
             for i, profile in enumerate(PROFILES[:2])
         ])
         
-        prompt = f"""Given the following job search criteria and two candidate profiles, determine which candidate is the better match.
+        prompt = f"""Given the following job search criteria and two candidate profiles, critically evaluate if either candidate is truly qualified for the role. Be strict and honest in your assessment.
         
 Search Criteria:
 {request.search_query}
@@ -77,20 +77,28 @@ Search Criteria:
 {candidates_text}
 
 Please analyze both candidates against the search criteria and:
-1. Determine which candidate is a better match (reference them by their ID)
-2. Provide a brief explanation of why they are the better match
-3. List the key matching points
+1. First determine if ANY candidate meets the minimum qualifications. If none do, clearly state this.
+2. Only if at least one candidate is qualified, determine which candidate is a better match (reference them by their ID)
+3. Provide a detailed explanation of your decision
+4. List specific matching points and any concerning gaps
 
 Format your response as:
+QUALIFIED: [YES/NO]
+[If NO]:
+REASON: [Explanation why no candidates meet requirements]
+GAPS: [Key missing qualifications]
+
+[If YES]:
 SELECTED: [ID number]
 REASON: [Your explanation]
-MATCHING POINTS: [Bullet points of matching criteria]"""
+MATCHING POINTS: [Bullet points of matching criteria]
+CONCERNS: [Any potential gaps or concerns]"""
 
         response = litellm.completion(
             model="gpt-3.5-turbo",
             messages=[{
                 "role": "system",
-                "content": "You are an expert recruiter AI that analyzes candidate profiles against job requirements to find the best matches."
+                "content": "You are a highly critical expert recruiter AI that maintains strict standards when evaluating candidates. You prioritize finding truly qualified matches over making compromises."
             },
             {
                 "role": "user",
@@ -100,6 +108,13 @@ MATCHING POINTS: [Bullet points of matching criteria]"""
 
         # Extract the AI's analysis
         analysis = response.choices[0].message.content
+
+        # Check if any candidates are qualified
+        if "QUALIFIED: NO" in analysis:
+            return {
+                "status": "no_qualified_candidates",
+                "analysis": analysis
+            }
 
         return {
             "status": "success",
