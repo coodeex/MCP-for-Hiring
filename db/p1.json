@@ -13,6 +13,36 @@
       "headline": "CTO at Clarvo | Agents",
       "location": "San Francisco, California, United States of America",
       "summary": "Building software for people. Optimistic realist.\n\nI see a major shift happening in tech toward agentic systems. There's huge potential in combining large datasets, algorithmic reasoning, and LLM layers connected to tools that can complete tasks autonomously.\n \nHappy to discuss building agentic systems!",
+      "personality": {
+        "mind": {
+          "type": "I",
+          "trait": "Introversion",
+          "score": 78,
+          "description": "Prefers quiet time to socializing",
+          "scenario": "Often chooses to work during quiet hours when the office is empty"
+        },
+        "energy": {
+          "type": "N",
+          "trait": "Intuition",
+          "score": 85,
+          "description": "Would rather try novel approaches than stick to tried-and-tested methods",
+          "scenario": "Experiments with new AI technologies instead of using conventional development approaches"
+        },
+        "nature": {
+          "type": "T",
+          "trait": "Thinking",
+          "score": 92,
+          "description": "Often expresses opinions directly, regardless of how they may be received",
+          "scenario": "Provides straightforward technical feedback in code reviews without sugar-coating"
+        },
+        "tactics": {
+          "type": "P",
+          "trait": "Perceiving",
+          "score": 67,
+          "description": "Would rather be good at many things than be an expert in one specialization",
+          "scenario": "Takes on various roles in the startup from backend to AI development"
+        }
+      },
       "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQEN8QTMQ7CR1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730968773226?e=1752710400&v=beta&t=R18TfRE2lwpR_WvfDd4PosZYUfGFT2hSZFS8KbS-wVw",
       "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQET6UVLwsMOqA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1729664832966?e=1752710400&v=beta&t=fzlOHKfEItVhGXopXVWO1FlLjbHdTzjbVRsNb8Q9-BY",
       "openToWork": false,

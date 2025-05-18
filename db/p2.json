@@ -13,6 +13,36 @@
       "headline": "Head of Digital Marketing at TechVibe | Growth Marketing | Brand Strategy",
       "location": "New York, New York, United States of America",
       "summary": "Passionate about creating data-driven marketing strategies that drive real business growth. Over a decade of experience in digital marketing, specializing in SaaS and B2B tech companies.\n\nI believe in the power of storytelling combined with analytics to create marketing campaigns that not only reach audiences but truly resonate with them.\n\nExpert in: Growth Marketing, Content Strategy, Marketing Analytics, Brand Development, and Team Leadership.",
+      "personality": {
+        "mind": {
+          "type": "E",
+          "trait": "Extraversion",
+          "score": 89,
+          "description": "Prefers to work collaboratively rather than independently",
+          "scenario": "Regularly initiates team brainstorming sessions for campaign planning"
+        },
+        "energy": {
+          "type": "N",
+          "trait": "Intuition",
+          "score": 73,
+          "description": "Would rather work on theoretical contributions than concrete tasks with tangible outcomes",
+          "scenario": "Focuses on developing innovative marketing strategies over routine campaign execution"
+        },
+        "nature": {
+          "type": "F",
+          "trait": "Feeling",
+          "score": 82,
+          "description": "Prioritizes certainty over speed when making decisions",
+          "scenario": "Takes time to gather team input before finalizing marketing directions"
+        },
+        "tactics": {
+          "type": "J",
+          "trait": "Judging",
+          "score": 95,
+          "description": "Tends to stick to decisions over constantly second-guessing them",
+          "scenario": "Maintains consistent brand messaging throughout campaign lifecycle"
+        }
+      },
       "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQH8QTMQ7CR1Q/profile-displayphoto-shrink_800_800/0/1730968773226?e=1752710400&v=beta&t=S18TfRE2lwpR_WvfDd4PosZYUfGFT2hSZFS8KbS-wVw",
       "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQFT6UVLwsMOqA/profile-displaybackgroundimage-shrink_350_1400/0/1729664832966?e=1752710400&v=beta&t=gzlOHKfEItVhGXopXVWO1FlLjbHdTzjbVRsNb8Q9-BY",
       "openToWork": false,
