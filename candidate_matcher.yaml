@@ -28,7 +28,7 @@ No matching candidates found in the database for the specified criteria."
 # The variables used in the prompt. You can define default values for these variables.
 # Ensure that the variable names match those used in the prompt.
 vars:
-  criteria: "Financial Services Manager"
+  criteria: "Marketing"
 
 # The bundle configuration. You can specify a bundle name or a list of MCP servers you want your agent to use.
 # bundle: "default"
