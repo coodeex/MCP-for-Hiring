@@ -1,17 +1,13 @@
 from dataclasses import dataclass
+import os
 from typing import List
 import httpx
+from dotenv import load_dotenv
 
-@dataclass
-class Profile:
-    name: str
-    title: str
-    skills: List[str]
-    experience_years: int
-    department: str
+load_dotenv()
 
 TOOLHOUSE_URL = "https://agents.toolhouse.ai/500de86f-63aa-4a56-800a-1eef2e4257c1"
-TOOLHOUSE_AUTH = "Bearer th-db1eXm0Nl2qf9_oAPTKJAWRFA8HrhOUAHhF-FK-11-A"
+TOOLHOUSE_AUTH = os.getenv("TOOLHOUSE_AUTH")
 
 def find_best_candidate(search_query: str) -> str:
     """
