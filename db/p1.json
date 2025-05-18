@@ -5,13 +5,13 @@
     "credits_left": 24448,
     "rate_limit_left": 999,
     "person": {
-      "publicIdentifier": "lehto-juha",
+      "publicIdentifier": "freddie-walker",
       "linkedInIdentifier": "ACoAACiU79gBzfRxEWOaubh8pjziRG1r3dSI_aM",
       "memberIdentifier": "680849368",
-      "linkedInUrl": "https://www.linkedin.com/in/lehto-juha",
+      "linkedInUrl": "https://www.linkedin.com/in/freddie-walker",
       "email": "hackathon549@gmail.com",
-      "firstName": "Juha",
-      "lastName": "Lehto",
+      "firstName": "Freddie",
+      "lastName": "Walker",
       "headline": "CTO at Clarvo | Agents",
       "location": "San Francisco, California, United States of America",
       "summary": "Building software for people. Optimistic realist.\n\nI see a major shift happening in tech toward agentic systems. There's huge potential in combining large datasets, algorithmic reasoning, and LLM layers connected to tools that can complete tasks autonomously.\n \nHappy to discuss building agentic systems!",
@@ -45,15 +45,7 @@
           "scenario": "Takes on various roles in the startup from backend to AI development"
         }
       },
-      "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQEN8QTMQ7CR1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730968773226?e=1752710400&v=beta&t=R18TfRE2lwpR_WvfDd4PosZYUfGFT2hSZFS8KbS-wVw",
       "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQET6UVLwsMOqA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1729664832966?e=1752710400&v=beta&t=fzlOHKfEItVhGXopXVWO1FlLjbHdTzjbVRsNb8Q9-BY",
-      "openToWork": false,
-      "premium": false,
-      "showVerificationBadge": true,
-      "creationDate": {
-        "month": 9,
-        "year": 2018
-      },
       "followerCount": 1654,
       "positions": {
         "positionsCount": 4,
