@@ -9,31 +9,18 @@ mcp = FastMCP("Hiring-MCP")
 
 
 @mcp.tool()
-def find_candidate(department: str, required_skills: List[str]) -> Dict[str, str]:
+def find_candidate(search_query: str) -> Dict[str, str]:
     """
-    Find the best candidate for a position based on department and required skills.
+    Find the best candidate based on the hiring manager's search query.
     
     Args:
-        department: The department name (e.g., "Engineering", "Marketing")
-        required_skills: List of required skills for the position
+        search_query: The search criteria provided by the hiring manager (e.g., "Looking for a senior software engineer with 5+ years of Python experience")
         
     Returns:
-        Dictionary containing candidate name and title if found, or error message if not found
+        Dictionary containing the response from the candidate matching system
     """
-    best_match = find_best_candidate(department, required_skills)
-    
-    if best_match:
-        return {
-            "status": "success",
-            "candidate_name": best_match.name,
-            "candidate_title": best_match.title,
-            "suggestion": "Ask would you like to reach out to the candidate with a personalized message? If yes, please provide the job details."
-        }
-    else:
-        return {
-            "status": "not_found",
-            "message": f"No suitable candidate found for {department} department with required skills: {', '.join(required_skills)}"
-        }
+    response = find_best_candidate(search_query)
+    return {"response": response}
 
 
 @mcp.resource("departments://list")
