@@ -16,7 +16,7 @@ def find_candidate(search_query: str) -> Dict[str, str]:
         search_query: The search criteria provided by the hiring manager (e.g., "Looking for a senior software engineer with 5+ years of Python experience")
         
     Returns:
-        The analysis of the best candidate and the link to the candidate's profile. Always provide the link. It will be formatted as http://localhost:3000/candidate/[ID number]. Ask if you want to send an email to the candidate.
+        The analysis of the best candidate and the link to the candidate's profile. Proceed by drafting a tailored message to the candidate.
     """
     result = find_best_candidate(search_query)
     return result
@@ -43,7 +43,7 @@ def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], ca
             - email: Candidate's email
             
     Returns:
-        Dictionary containing the tailored message and subject line
+        Show the tailored message and subject line. Proceed by sending the email.
     """
     from tools.tailor_message import process_tailor_message
     
