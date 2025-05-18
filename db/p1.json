@@ -1,0 +1,332 @@
+{
+    "success": true,
+    "credits_left": 24448,
+    "rate_limit_left": 999,
+    "person": {
+      "publicIdentifier": "lehto-juha",
+      "linkedInIdentifier": "ACoAACiU79gBzfRxEWOaubh8pjziRG1r3dSI_aM",
+      "memberIdentifier": "680849368",
+      "linkedInUrl": "https://www.linkedin.com/in/lehto-juha",
+      "firstName": "Juha",
+      "lastName": "Lehto",
+      "headline": "CTO at Clarvo | Agents",
+      "location": "San Francisco, California, United States of America",
+      "summary": "Building software for people. Optimistic realist.\n\nI see a major shift happening in tech toward agentic systems. There’s huge potential in combining large datasets, algorithmic reasoning, and LLM layers connected to tools that can complete tasks autonomously.\n \nHappy to discuss building agentic systems!",
+      "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQEN8QTMQ7CR1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730968773226?e=1752710400&v=beta&t=R18TfRE2lwpR_WvfDd4PosZYUfGFT2hSZFS8KbS-wVw",
+      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQET6UVLwsMOqA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1729664832966?e=1752710400&v=beta&t=fzlOHKfEItVhGXopXVWO1FlLjbHdTzjbVRsNb8Q9-BY",
+      "openToWork": false,
+      "premium": false,
+      "showVerificationBadge": true,
+      "creationDate": {
+        "month": 9,
+        "year": 2018
+      },
+      "followerCount": 1654,
+      "positions": {
+        "positionsCount": 4,
+        "positionHistory": [
+          {
+            "title": "CTO and Co-Founder",
+            "companyName": "Clarvo",
+            "companyLocation": "Espoo, Uusimaa, Finland",
+            "description": "We’re building AI agents that help people and companies find each other on their own terms.\n\nSearching for my first IT job, I spent a lot of time creating my CV and applying to many interesting job opportunities. However, waiting and reading rejection letters were rough. My relatively difficult experience got me interested in making the process easier and less stressful for people.",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2023
+              },
+              "end": null
+            },
+            "contractType": "Self-employed",
+            "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFLADr_D4aDlw/company-logo_400_400/company-logo_400_400/0/1729491394352/hanki_app_logo?e=1752710400&v=beta&t=2AVuK8U9tyAly82Yywzkz8b9uXnYo7nDfUEio3eE4uM",
+            "linkedInUrl": "https://www.linkedin.com/company/86305318/",
+            "linkedInId": "86305318"
+          },
+          {
+            "title": "Full Stack Developer",
+            "companyName": "Taito United",
+            "companyLocation": "Espoo, Southern Finland, Finland",
+            "description": "Worked on multiple client projects, gaining experience with modern web development.",
+            "startEndDate": {
+              "start": {
+                "month": 4,
+                "year": 2021
+              },
+              "end": {
+                "month": 9,
+                "year": 2023
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQEVKvdsPYgYtA/company-logo_400_400/company-logo_400_400/0/1630526318883/taito_united_logo?e=1752710400&v=beta&t=JsI6TmLhJYKXk1L8LTtUXfIOsjzSSIC-RkVkOdrsKoM",
+            "linkedInUrl": "https://www.linkedin.com/company/2690295/",
+            "linkedInId": "2690295"
+          },
+          {
+            "title": "Salesman",
+            "companyName": "Rainmaker Business",
+            "companyLocation": "Helsinki Area, Finland",
+            "description": "I was successfully selling Telia's optical fiber (Avoin kuitu) in different neighbourhoods. \n\nI usually arranged meetings with my clients and told them how they would benefit if they had an optical fiber connection in their house. \n\nThe product costs around 2500€, so I really needed to create trust with my clients, before we could sign a contract.",
+            "startEndDate": {
+              "start": {
+                "month": 1,
+                "year": 2019
+              },
+              "end": {
+                "month": 6,
+                "year": 2019
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFwN2h5z03YOA/company-logo_400_400/company-logo_400_400/0/1731336141171/rainmaker_business_logo?e=1752710400&v=beta&t=maktUBfUfgJj70ee2D8INVHzWdiKrhEdullUmgSPyEg",
+            "linkedInUrl": "https://www.linkedin.com/company/10212987/",
+            "linkedInId": "10212987"
+          },
+          {
+            "title": "Substitute Teacher",
+            "companyName": "Espoon kaupunki - Esbo stad - City of Espoo",
+            "companyLocation": "Espoo",
+            "description": "I substituted classroom teachers in a primary school. I held a few hundred lessons. It means that I was working almost as a full-time teacher, except that I usually had a different class.",
+            "startEndDate": {
+              "start": {
+                "month": 1,
+                "year": 2019
+              },
+              "end": {
+                "month": 5,
+                "year": 2019
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQES-2Yl9p_DTA/company-logo_400_400/company-logo_400_400/0/1674627250371/espoonkaupunki_logo?e=1752710400&v=beta&t=tTphjqGMy4rr7ZxzqMLRujvumlZgYoZkLap5cE7QdpM",
+            "linkedInUrl": "https://www.linkedin.com/company/163686/",
+            "linkedInId": "163686"
+          }
+        ]
+      },
+      "schools": {
+        "educationsCount": 3,
+        "educationHistory": [
+          {
+            "degreeName": "Master's degree",
+            "fieldOfStudy": "Software and Service Engineering",
+            "description": "Skills: User-centered Design · Scrum · Software Development",
+            "linkedInUrl": "https://www.linkedin.com/company/738178/",
+            "schoolLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQG-CEfULBIE8A/company-logo_400_400/company-logo_400_400/0/1630616253213/aalto_university_logo?e=1752710400&v=beta&t=nPKLW3X5S0A8l_8e9ypg2IK6QozEBzVhN5zkhgGAIYQ",
+            "schoolName": "Aalto University",
+            "startEndDate": {
+              "start": {
+                "month": 1,
+                "year": 2023
+              },
+              "end": {
+                "month": 1,
+                "year": 2025
+              }
+            }
+          },
+          {
+            "degreeName": "Bachelor of Science (Technology)",
+            "fieldOfStudy": null,
+            "description": "Skills: Computer Science · Mathematics · Data Science",
+            "linkedInUrl": "https://www.linkedin.com/company/738178/",
+            "schoolLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQG-CEfULBIE8A/company-logo_400_400/company-logo_400_400/0/1630616253213/aalto_university_logo?e=1752710400&v=beta&t=nPKLW3X5S0A8l_8e9ypg2IK6QozEBzVhN5zkhgGAIYQ",
+            "schoolName": "Aalto University",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2019
+              },
+              "end": {
+                "month": 12,
+                "year": 2022
+              }
+            }
+          },
+          {
+            "degreeName": "High School (Ylioppilas)",
+            "fieldOfStudy": null,
+            "linkedInUrl": "https://www.linkedin.com/search/results/all/?keywords=Espoonlahden+lukio",
+            "schoolLogo": null,
+            "schoolName": "Espoonlahden lukio",
+            "startEndDate": {
+              "start": {
+                "month": 1,
+                "year": 2015
+              },
+              "end": {
+                "month": 1,
+                "year": 2018
+              }
+            }
+          }
+        ]
+      },
+      "skills": [
+        "AI Agents",
+        "Software Development",
+        "User-centered Design",
+        "Teamwork",
+        "Scrum",
+        "Agile Development",
+        "Product Development",
+        "Microsoft Azure",
+        "Cloud Computing",
+        "Artificial Intelligence (AI)",
+        "Large Language Models (LLM)",
+        "Machine Learning",
+        "Decision-Making",
+        "Communication",
+        "Problem Solving",
+        "Human Resources (HR)",
+        "Leadership",
+        "Data Science",
+        "Computer Science",
+        "MCP",
+        "Full-Stack Development",
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Python (Programming Language)",
+        "PostgreSQL",
+        "Docker",
+        "Engineering",
+        "Teaching",
+        "B2C sales",
+        "Mathematics",
+        "Microsoft Excel",
+        "IT Consulting",
+        "Web Development"
+      ],
+      "languages": [
+        "English",
+        "Finnish",
+        "Spanish",
+        "Swedish"
+      ],
+      "languagesWithProficiency": [
+        {
+          "language": "English",
+          "proficiency": "Native or bilingual proficiency"
+        },
+        {
+          "language": "Finnish",
+          "proficiency": "Native or bilingual proficiency"
+        },
+        {
+          "language": "Spanish",
+          "proficiency": "Elementary proficiency"
+        },
+        {
+          "language": "Swedish",
+          "proficiency": "Elementary proficiency"
+        }
+      ],
+      "recommendations": {
+        "recommendationsCount": 0,
+        "recommendationHistory": []
+      },
+      "certifications": {
+        "certificationsCount": 1,
+        "certificationHistory": [
+          {
+            "name": "Certified ScrumMaster (CSM)",
+            "organizationName": "Scrum Alliance",
+            "organizationUrl": "https://www.linkedin.com/company/871226/",
+            "issuedDate": "Issued Sep 2024 · Expires Sep 2026"
+          }
+        ]
+      },
+      "testScores": {
+        "testScoresCount": 0,
+        "testScoreHistory": []
+      },
+      "volunteeringExperiences": {
+        "volunteeringExperiencesCount": 6,
+        "volunteeringExperienceHistory": [
+          {
+            "organizationName": "Polyteknikkojen elävän musiikin yhdistys PELMU ry",
+            "role": "Chairman",
+            "period": "Jan 2023 - Dec 2023 · 1 yr"
+          },
+          {
+            "organizationName": "Automaatio- ja systeemitekniikan kilta",
+            "role": "Head of Web Development",
+            "period": "Jan 2023 - Dec 2023 · 1 yr"
+          },
+          {
+            "organizationName": "Automaatio- ja systeemitekniikan kilta",
+            "role": "Head of Culture",
+            "cause": "Arts and Culture",
+            "period": "Jan 2022 - Dec 2022 · 1 yr"
+          },
+          {
+            "organizationName": "Polyteknikkojen elävän musiikin yhdistys PELMU ry",
+            "role": "Vice Chairman",
+            "period": "Jan 2022 - Dec 2022 · 1 yr"
+          },
+          {
+            "organizationName": "Aalto University",
+            "role": "Student Tutor",
+            "period": "Sep 2020 - Aug 2022 · 2 yrs"
+          },
+          {
+            "organizationName": "Polyteknikkojen elävän musiikin yhdistys PELMU ry",
+            "role": "Treasurer",
+            "period": "Jan 2021 - Dec 2021 · 1 yr"
+          }
+        ]
+      },
+      "interests": {}
+    },
+    "company": {
+      "linkedInId": "86305318",
+      "name": "Clarvo",
+      "universalName": "clarvo",
+      "linkedInUrl": "https://www.linkedin.com/company/86305318",
+      "employeeCount": 5,
+      "followerCount": 1337,
+      "employeeCountRange": {
+        "start": 2,
+        "end": 10
+      },
+      "websiteUrl": "https://www.clarvo.ai",
+      "tagline": "Your Personal Career Agent. So Opportunities Can Find You.",
+      "description": "Train your own AI career agent to represent you on the job market. Never miss the right career opportunity again.\n\nYou hate spam and we hate it too, which is why we prioritize quality over quantity, in getting you your next job.\n",
+      "industry": "Technology, Information and Internet",
+      "phone": null,
+      "specialities": [
+        "Hiring",
+        "Talent Acquisition",
+        "Growth",
+        "Data"
+      ],
+      "headquarter": {
+        "city": "Helsinki",
+        "country": "FI",
+        "postalCode": null,
+        "geographicArea": null,
+        "street1": null,
+        "street2": null
+      },
+      "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQFLADr_D4aDlw/company-logo_400_400/company-logo_400_400/0/1729491394352/hanki_app_logo?e=1752710400&v=beta&t=2AVuK8U9tyAly82Yywzkz8b9uXnYo7nDfUEio3eE4uM",
+      "foundedOn": {
+        "year": 2023
+      },
+      "fundingData": {
+        "numberOfFundingRounds": 1,
+        "crunchbaseOrganizationUrl": "https://www.crunchbase.com/organization/clarvo?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=profile_cta",
+        "lastFundingRound": {
+          "fundingType": "Pre-seed",
+          "moneyRaised": {
+            "amount": "164010",
+            "currencyCode": "USD"
+          },
+          "fundingRoundUrl": "https://www.crunchbase.com/funding_round/clarvo-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=last_funding",
+          "announcedOn": "2024-11-05T00:00:00.000Z",
+          "numberOfOtherInvestors": 1,
+          "investorsUrl": "https://www.crunchbase.com/funding_round/clarvo-pre-seed--5ee0f1b6?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=all_investors",
+          "leadInvestors": []
+        }
+      },
+      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4D1BAQGJpbt1LRFLJw/company-background_400/B4DZZUz3DFHIAY-/0/1745179604169/clarvo_cover?e=1748131200&v=beta&t=naZAYZV8Vy95m6ZDd5LL_SNWAoZxpekx3Vx6S6C42As"
+    }
+  }

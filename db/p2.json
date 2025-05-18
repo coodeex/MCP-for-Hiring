@@ -1,0 +1,332 @@
+{
+    "success": true,
+    "credits_left": 24448,
+    "rate_limit_left": 999,
+    "person": {
+      "publicIdentifier": "sarah-anderson-marketing",
+      "linkedInIdentifier": "ACoAACbR45gBzfRxEWOaubh8pjziRG1r3dSI_bN",
+      "memberIdentifier": "681234567",
+      "linkedInUrl": "https://www.linkedin.com/in/sarah-anderson-marketing",
+      "firstName": "Sarah",
+      "lastName": "Anderson",
+      "headline": "Head of Digital Marketing at TechVibe | Growth Marketing | Brand Strategy",
+      "location": "New York, New York, United States of America",
+      "summary": "Passionate about creating data-driven marketing strategies that drive real business growth. Over a decade of experience in digital marketing, specializing in SaaS and B2B tech companies.\n\nI believe in the power of storytelling combined with analytics to create marketing campaigns that not only reach audiences but truly resonate with them.\n\nExpert in: Growth Marketing, Content Strategy, Marketing Analytics, Brand Development, and Team Leadership.",
+      "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQH8QTMQ7CR1Q/profile-displayphoto-shrink_800_800/0/1730968773226?e=1752710400&v=beta&t=S18TfRE2lwpR_WvfDd4PosZYUfGFT2hSZFS8KbS-wVw",
+      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D5616AQFT6UVLwsMOqA/profile-displaybackgroundimage-shrink_350_1400/0/1729664832966?e=1752710400&v=beta&t=gzlOHKfEItVhGXopXVWO1FlLjbHdTzjbVRsNb8Q9-BY",
+      "openToWork": false,
+      "premium": true,
+      "showVerificationBadge": true,
+      "creationDate": {
+        "month": 3,
+        "year": 2015
+      },
+      "followerCount": 12543,
+      "positions": {
+        "positionsCount": 4,
+        "positionHistory": [
+          {
+            "title": "Head of Digital Marketing",
+            "companyName": "TechVibe",
+            "companyLocation": "New York, United States",
+            "description": "Leading a team of 15 marketing professionals across digital marketing, content, and growth initiatives. Developed and executed comprehensive marketing strategies resulting in 150% YoY growth in user acquisition.\n\nKey achievements:\n- Launched successful rebranding campaign increasing brand awareness by 80%\n- Implemented data-driven marketing automation reducing CAC by 35%\n- Established thought leadership program generating 50k+ monthly blog visits",
+            "startEndDate": {
+              "start": {
+                "month": 6,
+                "year": 2021
+              },
+              "end": null
+            },
+            "contractType": "Full-time",
+            "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFLADr_D4aDlw/company-logo_400_400/0/1729491394352?e=1752710400&v=beta&t=2AVuK8U9tyAly82Yywzkz8b9uXnYo7nDfUEio3eE4uM",
+            "linkedInUrl": "https://www.linkedin.com/company/86305319/",
+            "linkedInId": "86305319"
+          },
+          {
+            "title": "Senior Marketing Manager",
+            "companyName": "CloudScale Solutions",
+            "companyLocation": "Boston, Massachusetts, United States",
+            "description": "Managed end-to-end marketing campaigns for enterprise SaaS products. Specialized in account-based marketing (ABM) strategies and marketing automation.\n\nKey achievements:\n- Increased marketing qualified leads by 200% through targeted ABM campaigns\n- Developed customer advocacy program with 50+ active ambassadors\n- Optimized conversion funnel resulting in 45% improvement in lead-to-customer rate",
+            "startEndDate": {
+              "start": {
+                "month": 3,
+                "year": 2018
+              },
+              "end": {
+                "month": 6,
+                "year": 2021
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQEVKvdsPYgYtA/company-logo_400_400/0/1630526318883?e=1752710400&v=beta&t=JsI6TmLhJYKXk1L8LTtUXfIOsjzSSIC-RkVkOdrsKoM",
+            "linkedInUrl": "https://www.linkedin.com/company/2690296/",
+            "linkedInId": "2690296"
+          },
+          {
+            "title": "Digital Marketing Specialist",
+            "companyName": "GrowthGenius",
+            "companyLocation": "San Francisco, California, United States",
+            "description": "Managed paid social media campaigns and content marketing initiatives. Collaborated with design team to create engaging marketing collateral.\n\nKey achievements:\n- Reduced cost per acquisition by 40% through optimization of ad campaigns\n- Grew social media following from 10k to 100k across platforms\n- Launched successful influencer marketing program",
+            "startEndDate": {
+              "start": {
+                "month": 7,
+                "year": 2016
+              },
+              "end": {
+                "month": 3,
+                "year": 2018
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFwN2h5z03YOA/company-logo_400_400/0/1731336141171?e=1752710400&v=beta&t=maktUBfUfgJj70ee2D8INVHzWdiKrhEdullUmgSPyEg",
+            "linkedInUrl": "https://www.linkedin.com/company/10212988/",
+            "linkedInId": "10212988"
+          },
+          {
+            "title": "Marketing Coordinator",
+            "companyName": "InnovateNow",
+            "companyLocation": "New York",
+            "description": "Started career in marketing with focus on email campaigns and social media management. Assisted in event planning and content creation.",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2015
+              },
+              "end": {
+                "month": 7,
+                "year": 2016
+              }
+            },
+            "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQES-2Yl9p_DTA/company-logo_400_400/0/1674627250371?e=1752710400&v=beta&t=tTphjqGMy4rr7ZxzqMLRujvumlZgYoZkLap5cE7QdpM",
+            "linkedInUrl": "https://www.linkedin.com/company/163687/",
+            "linkedInId": "163687"
+          }
+        ]
+      },
+      "schools": {
+        "educationsCount": 3,
+        "educationHistory": [
+          {
+            "degreeName": "Master of Business Administration (MBA)",
+            "fieldOfStudy": "Marketing and Digital Strategy",
+            "description": "Skills: Strategic Marketing · Digital Marketing · Business Strategy",
+            "linkedInUrl": "https://www.linkedin.com/company/738179/",
+            "schoolLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQG-CEfULBIE8A/company-logo_400_400/0/1630616253213?e=1752710400&v=beta&t=nPKLW3X5S0A8l_8e9ypg2IK6QozEBzVhN5zkhgGAIYQ",
+            "schoolName": "Columbia Business School",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2020
+              },
+              "end": {
+                "month": 5,
+                "year": 2022
+              }
+            }
+          },
+          {
+            "degreeName": "Bachelor of Science",
+            "fieldOfStudy": "Marketing and Communications",
+            "description": "Skills: Marketing · Communications · Business Analytics",
+            "linkedInUrl": "https://www.linkedin.com/company/738179/",
+            "schoolLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQG-CEfULBIE8A/company-logo_400_400/0/1630616253213?e=1752710400&v=beta&t=nPKLW3X5S0A8l_8e9ypg2IK6QozEBzVhN5zkhgGAIYQ",
+            "schoolName": "New York University",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2011
+              },
+              "end": {
+                "month": 5,
+                "year": 2015
+              }
+            }
+          },
+          {
+            "degreeName": "High School Diploma",
+            "fieldOfStudy": null,
+            "linkedInUrl": "https://www.linkedin.com/search/results/all/?keywords=Stuyvesant+High+School",
+            "schoolLogo": null,
+            "schoolName": "Stuyvesant High School",
+            "startEndDate": {
+              "start": {
+                "month": 9,
+                "year": 2007
+              },
+              "end": {
+                "month": 6,
+                "year": 2011
+              }
+            }
+          }
+        ]
+      },
+      "skills": [
+        "Digital Marketing Strategy",
+        "Content Marketing",
+        "SEO/SEM",
+        "Social Media Marketing",
+        "Marketing Analytics",
+        "Brand Development",
+        "Growth Marketing",
+        "Marketing Automation",
+        "Lead Generation",
+        "Account-Based Marketing (ABM)",
+        "Email Marketing",
+        "Campaign Management",
+        "Google Analytics",
+        "Marketing Technology Stack",
+        "A/B Testing",
+        "Customer Journey Mapping",
+        "Data Analysis",
+        "Team Leadership",
+        "Project Management",
+        "Strategic Planning",
+        "HubSpot",
+        "Salesforce",
+        "Adobe Creative Suite",
+        "Marketo",
+        "Public Speaking",
+        "Competitive Analysis",
+        "Budget Management",
+        "Influencer Marketing",
+        "Product Marketing",
+        "Market Research",
+        "CRM",
+        "Paid Advertising",
+        "Content Strategy",
+        "Marketing Operations",
+        "Brand Storytelling"
+      ],
+      "languages": [
+        "English",
+        "Spanish",
+        "French",
+        "Mandarin"
+      ],
+      "languagesWithProficiency": [
+        {
+          "language": "English",
+          "proficiency": "Native or bilingual proficiency"
+        },
+        {
+          "language": "Spanish",
+          "proficiency": "Professional working proficiency"
+        },
+        {
+          "language": "French",
+          "proficiency": "Limited working proficiency"
+        },
+        {
+          "language": "Mandarin",
+          "proficiency": "Elementary proficiency"
+        }
+      ],
+      "recommendations": {
+        "recommendationsCount": 0,
+        "recommendationHistory": []
+      },
+      "certifications": {
+        "certificationsCount": 1,
+        "certificationHistory": [
+          {
+            "name": "Google Analytics Certification",
+            "organizationName": "Google",
+            "organizationUrl": "https://www.linkedin.com/company/1441/",
+            "issuedDate": "Issued Jan 2024 · Expires Jan 2025"
+          }
+        ]
+      },
+      "testScores": {
+        "testScoresCount": 0,
+        "testScoreHistory": []
+      },
+      "volunteeringExperiences": {
+        "volunteeringExperiencesCount": 6,
+        "volunteeringExperienceHistory": [
+          {
+            "organizationName": "Women in Marketing NYC",
+            "role": "Chapter President",
+            "period": "Jan 2023 - Present · 1 yr 3 mos"
+          },
+          {
+            "organizationName": "Digital Marketing Institute",
+            "role": "Mentor",
+            "period": "Jun 2022 - Present · 1 yr 10 mos"
+          },
+          {
+            "organizationName": "Marketing for Good",
+            "role": "Board Member",
+            "cause": "Non-profit Marketing",
+            "period": "Jan 2022 - Dec 2023 · 2 yrs"
+          },
+          {
+            "organizationName": "NYU Alumni Association",
+            "role": "Marketing Committee Lead",
+            "period": "Jan 2021 - Dec 2022 · 2 yrs"
+          },
+          {
+            "organizationName": "Tech Marketing Conference",
+            "role": "Event Organizer",
+            "period": "Jan 2020 - Dec 2021 · 2 yrs"
+          },
+          {
+            "organizationName": "Local Business Alliance",
+            "role": "Marketing Advisor",
+            "period": "Jun 2019 - Jun 2020 · 1 yr"
+          }
+        ]
+      },
+      "interests": {}
+    },
+    "company": {
+      "linkedInId": "86305319",
+      "name": "TechVibe",
+      "universalName": "techvibe",
+      "linkedInUrl": "https://www.linkedin.com/company/86305319",
+      "employeeCount": 250,
+      "followerCount": 25000,
+      "employeeCountRange": {
+        "start": 201,
+        "end": 500
+      },
+      "websiteUrl": "https://www.techvibe.com",
+      "tagline": "Transforming Digital Experiences Through Innovation",
+      "description": "TechVibe is a leading digital transformation company helping businesses leverage cutting-edge technology to create exceptional customer experiences. Our suite of products includes AI-powered analytics, customer engagement platforms, and digital marketing solutions.\n\nWe believe in the power of technology to transform businesses and create meaningful connections with customers.",
+      "industry": "Computer Software",
+      "phone": null,
+      "specialities": [
+        "Digital Transformation",
+        "Customer Experience",
+        "Marketing Technology",
+        "Analytics"
+      ],
+      "headquarter": {
+        "city": "New York",
+        "country": "US",
+        "postalCode": "10013",
+        "geographicArea": "New York",
+        "street1": null,
+        "street2": null
+      },
+      "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQFLADr_D4aDlw/company-logo_400_400/0/1729491394352?e=1752710400&v=beta&t=2AVuK8U9tyAly82Yywzkz8b9uXnYo7nDfUEio3eE4uM",
+      "foundedOn": {
+        "year": 2018
+      },
+      "fundingData": {
+        "numberOfFundingRounds": 3,
+        "crunchbaseOrganizationUrl": "https://www.crunchbase.com/organization/techvibe?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=profile_cta",
+        "lastFundingRound": {
+          "fundingType": "Series B",
+          "moneyRaised": {
+            "amount": "45000000",
+            "currencyCode": "USD"
+          },
+          "fundingRoundUrl": "https://www.crunchbase.com/funding_round/techvibe-series-b?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=last_funding",
+          "announcedOn": "2023-09-15T00:00:00.000Z",
+          "numberOfOtherInvestors": 3,
+          "investorsUrl": "https://www.crunchbase.com/funding_round/techvibe-series-b?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=all_investors",
+          "leadInvestors": []
+        }
+      },
+      "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4D1BAQGJpbt1LRFLJw/company-background_400/0/1745179604169?e=1748131200&v=beta&t=naZAYZV8Vy95m6ZDd5LL_SNWAoZxpekx3Vx6S6C42As"
+    }
+  } 

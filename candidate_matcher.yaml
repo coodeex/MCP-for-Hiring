@@ -1,0 +1,39 @@
+# Toolhouse Agent Configuration
+# The ID of the agent. Do not change this unless you know what you're doing.
+id: 500de86f-63aa-4a56-800a-1eef2e4257c1
+
+# The name of the agent. This is used for display purposes.
+title: Candidate Matcher
+
+# The prompt of your agent. You can use variables in the prompt.
+prompt: "Using the internal database of candidate profiles and requirements, analyze the candidate's profile and evaluate their suitability for the position based on the following criteria:
+{criteria}
+
+Please:
+- Compare the candidate against our historical successful hires
+- Match percentage for each criterion based on our database patterns
+- Detailed analysis of the candidate's strengths and potential gaps
+- Overall suitability score with data-backed reasoning
+- Recommendations for interview focus areas based on past hiring insights"
+
+# The variables used in the prompt. You can define default values for these variables.
+# Ensure that the variable names match those used in the prompt.
+vars:
+  criteria: "Marketing Experience"
+
+# The bundle configuration. You can specify a bundle name or a list of MCP servers you want your agent to use.
+# bundle: "default"
+
+# Sets your agent to be public or private. By default, public agents are visible to all users and can be used by anyone.
+# Private agents are only visible to you and can only be used when called with your API Key.
+# Toolhouse Pro users can create private agents that are not visible to other users.
+# public: true
+
+# The end user ID. This is used to give the agent context about the user it is interacting with.
+toolhouse_id: "default"
+
+# The RAG configuration. Specify the RAG folder to use for accessing candidate and requirement data.
+rag: database
+
+# Schedule configuration. You can specify when the agent should run in cron format.
+# schedule: "0 0 * * *" # This would run the agent every day at midnight
