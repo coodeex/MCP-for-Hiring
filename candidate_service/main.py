@@ -30,7 +30,7 @@ class SearchRequest(BaseModel):
 def load_profiles() -> List[Dict]:
     profiles = []
     # Get all JSON files from the db directory
-    json_files = glob.glob('db/*.json')
+    json_files = glob.glob('../client/db/*.json')
     
     for file in json_files:
         try:
