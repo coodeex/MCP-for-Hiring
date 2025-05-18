@@ -42,7 +42,7 @@ vars:
 toolhouse_id: "default"
 
 # The RAG configuration. Specify the RAG folder to use for accessing candidate and requirement data.
-rag: database
+rag: database1
 
 # Schedule configuration. You can specify when the agent should run in cron format.
 # schedule: "0 0 * * *" # This would run the agent every day at midnight
