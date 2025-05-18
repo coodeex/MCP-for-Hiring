@@ -9,19 +9,23 @@ title: Candidate Matcher
 prompt: "Using the internal database of candidate profiles and requirements, analyze the candidate's profile and evaluate their suitability for the position based on the following criteria:
 {criteria}
 
-If no relevant candidates are found in the database, please clearly state that there are no matching candidates.
+Return the result in the following JSON format:
+{
+  \"id\": \"[candidate_id or 0 if no match found]\",
+  \"reason\": \"[A concise explanation of why this candidate is the best match, or 'No matching candidates found' if no suitable candidates]\"
+}
 
-For each matching candidate, please provide:
-- Basic Information:
-  * Full Name
-  * LinkedIn URL
-  * Current Location
-  * Brief summary of work experience and key skills
-- Compare the candidate against our historical successful hires
-- Match percentage for each criterion based on our database patterns
-- Detailed analysis of the candidate's strengths and potential gaps
-- Overall suitability score with data-backed reasoning
-- Recommendations for interview focus areas based on past hiring insights"
+Example successful match:
+{
+  \"id\": \"3\",
+  \"reason\": \"10+ years financial management experience, proven track record in similar role, strong leadership skills\"
+}
+
+Example no match:
+{
+  \"id\": \"0\",
+  \"reason\": \"No matching candidates found in the database for the specified criteria\"
+}"
 
 # The variables used in the prompt. You can define default values for these variables.
 # Ensure that the variable names match those used in the prompt.
