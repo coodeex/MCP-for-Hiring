@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import json
 import os
-from typing import Dict
+from typing import Dict, List
 import litellm
 from arize.otel import register
 from openinference.instrumentation.litellm import LiteLLMInstrumentor
@@ -25,52 +25,21 @@ LiteLLMInstrumentor().instrument(tracer_provider=tracer_provider)
 class SearchRequest(BaseModel):
     search_query: str
 
-# Global variables to store profile summaries
-p1_summary: str = ""
-p2_summary: str = ""
+# Load profiles directly
+def load_profiles() -> List[str]:
+    profiles = []
+    for file in ['db/p1.json', 'db/p2.json']:
+        try:
+            with open(file, 'r') as f:
+                data = json.load(f)
+                profiles.append(data['data']['person']['profile_summary'])
+        except Exception as e:
+            print(f"Error loading profile {file}: {str(e)}")
+            profiles.append("")
+    return profiles
 
-def load_profile_summary(json_file: str) -> str:
-    """
-    Load and parse a profile summary from a JSON file.
-    
-    Args:
-        json_file: Path to the JSON file containing profile data
-        
-    Returns:
-        Profile summary string
-        
-    Raises:
-        FileNotFoundError: If the JSON file doesn't exist
-        json.JSONDecodeError: If the JSON file is invalid
-        KeyError: If the required fields are missing in the JSON
-    """
-    try:
-        with open(json_file, 'r') as f:
-            data = json.load(f)
-            return data['data']['person']['profile_summary']
-    except FileNotFoundError:
-        raise Exception(f"Profile file not found: {json_file}")
-    except json.JSONDecodeError:
-        raise Exception(f"Invalid JSON in profile file: {json_file}")
-    except KeyError as e:
-        raise Exception(f"Missing required field in profile file {json_file}: {str(e)}")
-
-@app.on_event("startup")
-async def startup_event():
-    """
-    Load profile data during application startup.
-    This ensures profiles are loaded before handling any requests.
-    """
-    global p1_summary, p2_summary
-    try:
-        p1_summary = load_profile_summary('db/p1.json')
-        p2_summary = load_profile_summary('db/p2.json')
-    except Exception as e:
-        # Log the error but don't prevent startup
-        print(f"Error loading profiles during startup: {str(e)}")
-        # Initialize with empty strings to prevent None errors
-        p1_summary = ""
-        p2_summary = ""
+# Load profiles at module level
+PROFILES = load_profiles()
 
 @app.post("/find-candidate")
 async def find_best_candidate(request: SearchRequest) -> Dict:
@@ -78,7 +47,7 @@ async def find_best_candidate(request: SearchRequest) -> Dict:
     Find the best candidate by comparing search criteria against profile summaries using AI
     """
     # Verify profiles are loaded
-    if not p1_summary or not p2_summary:
+    if not all(PROFILES):
         raise HTTPException(
             status_code=500,
             detail="Profile data not properly loaded. Please check the profile JSON files."
@@ -92,10 +61,10 @@ Search Criteria:
 {request.search_query}
 
 Candidate 1 Profile:
-{p1_summary}
+{PROFILES[0]}
 
 Candidate 2 Profile:
-{p2_summary}
+{PROFILES[1]}
 
 Please analyze both candidates against the search criteria and:
 1. Determine which candidate is a better match
