@@ -117,12 +117,20 @@ GAPS: [Areas for consideration]"""
         if not selected_id_match:
             # Try to find any number after "SELECTED:" if the first pattern doesn't match
             selected_id_match = re.search(r'SELECTED:.*?(\d+)', analysis)
+            if not selected_id_match:
+                # Try to match the format "SELECTED: ID X" where X is the number
+                selected_id_match = re.search(r'SELECTED:\s*ID\s*(\d+)', analysis)
         selected_id = selected_id_match.group(1) if selected_id_match else PROFILES[0]['id']  # Default to first candidate if no match found
+
+        # Find the selected candidate's profile and email
+        selected_candidate = next((profile for profile in PROFILES if str(profile.get('id')) == str(selected_id)), PROFILES[0])
+        candidate_email = selected_candidate.get('email', 'Email not available')
 
         return {
             "status": "success",
             "analysis": analysis,
-            "candidate_link": f"http://localhost:3000/candidate/{selected_id}"
+            "candidate_link": f"http://localhost:3000/candidate/{selected_id}",
+            "candidate_email": candidate_email,
         }
 
     except Exception as e:

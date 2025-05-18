@@ -40,6 +40,7 @@ def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], ca
             - description: Company description
         candidate_profile: Dictionary containing candidate information like:
             - name: Candidate's name
+            - email: Candidate's email
             
     Returns:
         Dictionary containing the tailored message and subject line
@@ -51,6 +52,7 @@ def tailor_message(job_details: Dict[str, str], organization: Dict[str, str], ca
         job_title=job_details.get("title", ""),
         salary=job_details.get("salary", "Competitive"),
         candidate_name=candidate_profile.get("name", ""),
+        candidate_email=candidate_profile.get("email", ""),
         description=job_details.get("description", "")
     )
 
