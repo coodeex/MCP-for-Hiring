@@ -26,8 +26,10 @@ async function getCandidateData(id: string) {
   }
 }
 
-export default async function CandidatePage({ params }: { params: { id: string } }) {
-  const data = await getCandidateData(params.id);
+export default async function CandidatePage({ params }: { params: Promise<{ id: string }> }) {
+  // asynchronous access of `params.id`.
+  const { id } = await params;
+  const data = await getCandidateData(id);
   
   if (!data) {
     notFound();
