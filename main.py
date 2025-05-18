@@ -1,7 +1,7 @@
 # server.py
 from mcp.server.fastmcp import FastMCP
 from typing import Dict, List
-from profiles import find_best_candidate, Profile
+from profiles import find_best_candidate
 from tools.send_email import process_send_email
 
 # Create an MCP server for hiring
