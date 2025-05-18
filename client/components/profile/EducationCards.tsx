@@ -39,7 +39,10 @@ export function EducationCards({ education }: EducationCardsProps) {
             <div key={index} className="flex gap-4">
               {/* School Logo */}
               <div className="flex-shrink-0">
-                {edu.schoolLogo ? (
+              <div className="w-14 h-14 rounded-lg bg-muted flex items-center justify-center text-xl font-semibold">
+                    {edu.schoolName[0]}
+                  </div>
+                {/* {edu.schoolLogo ? (
                   <Image
                     src={edu.schoolLogo}
                     alt={edu.schoolName}
@@ -51,7 +54,7 @@ export function EducationCards({ education }: EducationCardsProps) {
                   <div className="w-14 h-14 rounded-lg bg-muted flex items-center justify-center text-xl font-semibold">
                     {edu.schoolName[0]}
                   </div>
-                )}
+                )} */}
               </div>
 
               {/* Education Details */}

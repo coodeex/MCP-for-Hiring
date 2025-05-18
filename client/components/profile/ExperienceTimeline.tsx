@@ -45,7 +45,10 @@ export function ExperienceTimeline({ positions }: ExperienceTimelineProps) {
               <div key={index} className="relative grid grid-cols-[72px_1fr] gap-6">
                 {/* Company Logo */}
                 <div className="relative z-10">
-                  {position.companyLogo ? (
+                <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center">
+                      {position.companyName[0]}
+                    </div>
+                  {/* {position.companyLogo ? (
                     <Image
                       src={position.companyLogo}
                       alt={position.companyName}
@@ -57,7 +60,7 @@ export function ExperienceTimeline({ positions }: ExperienceTimelineProps) {
                     <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center">
                       {position.companyName[0]}
                     </div>
-                  )}
+                  )} */}
                 </div>
 
                 {/* Position Details */}

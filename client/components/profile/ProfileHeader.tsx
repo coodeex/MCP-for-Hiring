@@ -47,7 +47,8 @@ export function ProfileHeader({ candidate }: ProfileHeaderProps) {
     <div className="relative">
       {/* Background Image */}
       <div className="h-64 w-full relative">
-        {candidate.backgroundUrl ? (
+      <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-600" />
+        {/* {candidate.backgroundUrl ? (
           <Image
             src={candidate.backgroundUrl}
             alt="Profile Background"
@@ -56,7 +57,7 @@ export function ProfileHeader({ candidate }: ProfileHeaderProps) {
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-600" />
-        )}
+        )} */}
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
@@ -86,7 +87,7 @@ export function ProfileHeader({ candidate }: ProfileHeaderProps) {
                 {/* Current Position */}
                 {currentPosition && (
                   <div className="flex items-center gap-4 mb-6">
-                    {currentPosition.companyLogo && (
+                    {/* {currentPosition.companyLogo && (
                       <Image
                         src={currentPosition.companyLogo}
                         alt={currentPosition.companyName}
@@ -94,7 +95,7 @@ export function ProfileHeader({ candidate }: ProfileHeaderProps) {
                         height={48}
                         className="rounded"
                       />
-                    )}
+                    )} */}
                     <div>
                       <p className="font-medium">{currentPosition.title}</p>
                       <p className="text-sm text-muted-foreground">

@@ -54,7 +54,7 @@ export function CompanyCard({ company }: CompanyCardProps) {
   return (
     <Card>
       <CardHeader className="flex flex-row items-center gap-4 pb-2">
-        {company.logo && (
+        {/* {company.logo && (
           <Image
             src={company.logo}
             alt={company.name}
@@ -62,7 +62,7 @@ export function CompanyCard({ company }: CompanyCardProps) {
             height={48}
             className="rounded-lg"
           />
-        )}
+        )} */}
         <div>
           <h3 className="font-semibold">{company.name}</h3>
           <p className="text-sm text-muted-foreground">{company.tagline}</p>
